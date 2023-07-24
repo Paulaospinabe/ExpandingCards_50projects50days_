@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');  /*Importacion de fuentes*/
+
+* {
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+
+h2 {
+    margin: 20px;
+    margin-left: 55px;
+    padding: 0;
+    margin-right: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(34, 33, 33);
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+    margin: 10px;
+    flex: 0.5;
+    color: ghostwhite;
+    -webkit-transition: all 700ms ease-in; /*Animacion de las imagenes*/
+}
+
+h3 {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.panel.active {
+    flex: 5;
+}
+
